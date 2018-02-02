@@ -20,26 +20,21 @@ public class Game {
 		return shipNumber;
 	}
 
-
 	public void setShipNumber(int shipNumber) {
 		this.shipNumber = shipNumber;
 	}
-
 
 	public Player[] getPlayers() {
 		return players;
 	}
 
-
 	public void setPlayers(Player[] players) {
 		this.players = players;
 	}
 
-
 	public static Scanner getSc() {
 		return sc;
 	}
-
 
 	public static void setSc(Scanner sc) {
 		Game.sc = sc;
@@ -50,5 +45,9 @@ public class Game {
 		System.out.println("Type your name :");
 		name = Game.sc.nextLine();
 		plyr.setName(name);
+	}
+	
+	public void askShipPlacement() {
+		
 	}
 }
