@@ -5,8 +5,8 @@ public class Map {
 	private Ship field[][];
 	
 	public Map(int x, int y) {
-		for (int i = 0; i < field.length; i++) {
-			for (int j = 0; j < field.length; j++) {
+		for (int i = 0; i < x; i++) {
+			for (int j = 0; j < y; j++) {
 				this.field[x][y] = null;
 			}
 		}
