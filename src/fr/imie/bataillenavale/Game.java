@@ -31,14 +31,6 @@ public class Game {
 	public void setPlayers(Player[] players) {
 		this.players = players;
 	}
-
-	public static Scanner getSc() {
-		return sc;
-	}
-
-	public static void setSc(Scanner sc) {
-		Game.sc = sc;
-	}
 	
 	public void askName(Player plyr) {
 		String name;
@@ -47,7 +39,24 @@ public class Game {
 		plyr.setName(name);
 	}
 	
-	public void askShipPlacement() {
+	public Ship genShip(String type, int x, int y) {
+		int idShip;
+		
+		if (type.compareTo("corvette") == 1) {
+			idShip = 1;
+		} else if (type.compareTo("destroyer") == 1) {
+			idShip = 2;
+		} else if (type.compareTo("croiseur") == 1) {
+			idShip = 3;
+		} else if (type.compareTo("porte avion") == 1) {
+			idShip = 4;
+		} else {
+			return null;
+		}
+	}
+	
+	public void askShipPlacement(Player) {
+		
 		
 	}
 }
