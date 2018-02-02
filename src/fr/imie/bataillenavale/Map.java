@@ -17,4 +17,8 @@ public class Map {
 		return field;
 	}
 
+	public Boolean isEmpty(int x, int y) {
+		Boolean empty = (this.field[x][y] == null) ? true : false;
+		return empty;
+	}
 }
